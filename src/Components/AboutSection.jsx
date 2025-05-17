@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee';
 
 const AboutSection = () => {
   return (
-    <section className="bg-gradient-to-br from-purple-200 via-white to-white py-10 lg:py-20 px-6 md:px-12 lg:px-20 font-roboto">
+    <section className="bg-gradient-to-br from-purple-200 via-white to-white px-6 md:px-12 lg:px-20 font-roboto">
       <div className="wrapper flex flex-col lg:flex-row items-center gap-12">
         
         {/* Image */}
@@ -48,10 +48,10 @@ const AboutSection = () => {
 
           {/* Buttons */}
           <div className="flex  gap-4 justify-start">
-            <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-300">
+            <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 md:px-20 py-4 rounded-xl transition duration-300">
               About us →
             </button>
-            <button className="border text-sm md:text-base border-purple-500 hover:bg-purple-100 text-purple-500 font-semibold px-16 md:px-6 py-3 rounded-xl transition duration-300">
+            <button className="border text-sm md:text-base border-purple-500 hover:bg-purple-100 text-purple-500 font-semibold px-16 md:px-18 py-4 rounded-xl transition duration-300">
               Chat Now
             </button>
           </div>
