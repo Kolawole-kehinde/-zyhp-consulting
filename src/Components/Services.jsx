@@ -34,8 +34,8 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="bg-purple-200 py-10 mt-32">
-    <div className="wrapper bg-gradient-to-br from-purple-400 via-white to-white py-16 px-4 my-10 lg:px-20 rounded-3xl">
+    <section className="bg-purple-200 lg:py-10 mt-10 lg:mt-32 font-roboto">
+    <div className="wrapper bg-gradient-to-br from-purple-400 via-white to-white py-6 md:py-16 px-4 my-10 lg:px-20 rounded-3xl">
      <div className="grid lg:grid-cols-3 gap-8">
 
   <div className="order-1 lg:order-2 space-y-4">
