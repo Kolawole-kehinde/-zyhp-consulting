@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiSun, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
