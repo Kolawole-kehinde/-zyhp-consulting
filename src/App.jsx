@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
+
+import Footer from "./Components/layout/Footer";
+import HomePage from "./Pages/HomePage";
+import Navbar from "./Components/layout/Navbar";
 
 const App = () => {
   return (
     <div>
- 
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
-
-
+      <Navbar />
+      <HomePage />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
