@@ -1,12 +1,18 @@
-import React, { useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import { testimonials } from "../constant/Testimonials";
+import { useEffect, useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { testimonials } from '../constant/Testimonials';
+import './custom-swiper.css';
 
 const Testimonials = () => {
   const paginationRef = useRef(null);
+  const [paginationEl, setPaginationEl] = useState(null);
+
+  useEffect(() => {
+    setPaginationEl(paginationRef.current);
+  }, []);
 
   return (
     <section className="bg-gradient-to-br from-purple-200 via-white to-white py-6 lg:py-16 px-4 sm:px-6 lg:px-12">
@@ -18,26 +24,16 @@ const Testimonials = () => {
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{
-          el: paginationRef.current,
+          el: paginationEl,
           clickable: true,
         }}
-        onSwiper={(swiper) => {
-          // Needed because paginationRef.current is null on first render
-          if (swiper.params.pagination && typeof swiper.params.pagination !== "boolean") {
-            swiper.params.pagination.el = paginationRef.current;
-            swiper.pagination.init();
-            swiper.pagination.render();
-            swiper.pagination.update();
-          }
-        }}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 5000 }}
         spaceBetween={24}
         slidesPerView={1}
         breakpoints={{
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className=""
       >
         {testimonials.map((item, idx) => (
           <SwiperSlide key={idx}>
@@ -66,8 +62,7 @@ const Testimonials = () => {
         ))}
       </Swiper>
 
-      {/* External pagination below Swiper */}
-      <div ref={paginationRef} className="custom-swiper-pagination mt-8 flex justify-center" />
+      <div ref={paginationRef} className="custom-swiper-pagination mt-10 flex justify-center" />
     </section>
   );
 };
