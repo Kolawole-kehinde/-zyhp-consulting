@@ -7,6 +7,7 @@ import ExtraServices from '../Components/ExtraServices'
 import MarqueeServices from '../Components/MarqueeServices'
 import AboutCEO from '../Components/AboutCEO'
 import FAQ from '../Components/Faq'
+import Testimonials from '../Components/Testimonials'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
          <AboutCEO/>
          <MarqueeServices/>
          <FAQ/>
+          <Testimonials/>
          
     </div>
   )
