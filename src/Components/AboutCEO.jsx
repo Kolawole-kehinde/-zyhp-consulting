@@ -12,13 +12,12 @@ const AboutCEO = () => {
           </h2>
 
           <div className="mb-8">
-            <h3 className="text-2xl  font-semibold mb-4 leading-tight text-left text-purple-500">
+            <h3 className="text-xl md:text-2xl  font-semibold mb-4 leading-tight text-left text-purple-500">
               Allen Lynda – Founder & CEO of Zyhp Consulting
             </h3>
 
             <p className="text-gray-700 leading-[30px] mb-6 text-base  md:text-lg text-left px-2 md:px-0 w-full max-w-[505px]">
-              Allen Lynda – Founder & CEO of Zyhp Consulting Hi, I’m Allen
-              Lynda, the founder of Zyhp Consulting. I started this agency with
+              Hi, I’m Allen Lynda, the founder of Zyhp Consulting. I started this agency with
               one goal — to help people like you bring their ideas to life and
               build brands that truly stand out. My journey has taught me that
               success comes from a mix of strategy, creativity, and genuine
@@ -45,7 +44,7 @@ const AboutCEO = () => {
             {/* CEO image */}
             <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
               <img
-                src="/images/ceoo.jpg"
+                src="/images/cco.jpg"
                 alt="Our CEO"
                 className="w-full h-full object-cover"
               />

@@ -6,6 +6,7 @@ import ProgressSection from '../Components/ProgressSection'
 import ExtraServices from '../Components/ExtraServices'
 import MarqueeServices from '../Components/MarqueeServices'
 import AboutCEO from '../Components/AboutCEO'
+import FAQ from '../Components/Faq'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
          <ExtraServices/>
          <AboutCEO/>
          <MarqueeServices/>
+         <FAQ/>
          
     </div>
   )

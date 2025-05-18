@@ -32,7 +32,7 @@ const MarqueeServices = () => {
       </div>
 
       {/* Bottom section - scroll right */}
-      <div className="bg-purple-700 py-8">
+      {/* <div className="bg-purple-700 py-8">
         <Marquee speed={50} gradient={false} direction="right">
           {services.map((service, index) => (
             <span
@@ -43,7 +43,7 @@ const MarqueeServices = () => {
             </span>
           ))}
         </Marquee>
-      </div>
+      </div> */}
     </div>
   );
 };
