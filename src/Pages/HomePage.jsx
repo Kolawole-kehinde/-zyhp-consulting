@@ -9,6 +9,7 @@ import AboutCEO from '../Components/AboutCEO'
 import FAQ from '../Components/Faq'
 import Testimonials from '../Components/Testimonials'
 import MarqueeServices2 from '../Components/MarqueeServices2'
+import Member from '../Components/Member'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
          <ProgressSection/>
          <ExtraServices/>
          <AboutCEO/>
+         <Member/>
          <MarqueeServices/>
          <FAQ/>
           <Testimonials/>
