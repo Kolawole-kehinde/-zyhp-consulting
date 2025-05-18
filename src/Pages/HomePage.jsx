@@ -8,6 +8,7 @@ import MarqueeServices from '../Components/MarqueeServices'
 import AboutCEO from '../Components/AboutCEO'
 import FAQ from '../Components/Faq'
 import Testimonials from '../Components/Testimonials'
+import MarqueeServices2 from '../Components/MarqueeServices2'
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
          <MarqueeServices/>
          <FAQ/>
           <Testimonials/>
+          <MarqueeServices2/>
          
     </div>
   )
