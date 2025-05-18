@@ -9,7 +9,7 @@ const Testimonials = () => {
   const paginationRef = useRef(null);
 
   return (
-    <section className="bg-gradient-to-br from-purple-200 via-white to-white py-16 px-4 sm:px-6 lg:px-12">
+    <section className="bg-gradient-to-br from-purple-200 via-white to-white py-6 lg:py-16 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto text-center mb-10">
         <p className="text-purple-600 uppercase font-semibold tracking-wide">Testimonials</p>
         <h2 className="text-3xl font-bold text-gray-900">Hear From Our Clients</h2>
