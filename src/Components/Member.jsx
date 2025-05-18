@@ -3,7 +3,7 @@ import React from "react";
 const Member = () => {
   return (
     <section className="bg-gradient-to-br from-white via-white to-purple-200 py-12 px-4 sm:px-6 lg:px-8 font-roboto">
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row gap-12 items-center">
+     <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
 
         {/* CEO Image - now first on mobile */}
         <div className="md:w-1/2 flex justify-center w-full max-w-md">

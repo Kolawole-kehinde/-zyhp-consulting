@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { FiArrowRight } from 'react-icons/fi'
+
 import { Link } from 'react-router'
 
 
 const Footer = () => {
  
   return (
-    <footer className="bg-black text-white text-sm lg:px-16 mt-10">
+    <footer className="bg-black text-white text-sm lg:px-16 mt-10 font-roboto">
       {/* Top Section */}
       <div className=" px-4 flex items-start justify-between py-8 flex-col sm:flex-row gap-8">
         {/* Left Section */}
