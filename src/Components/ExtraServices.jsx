@@ -8,9 +8,9 @@ import { extraServices } from '../constant/ExtraService';
 
 const ExtraServices = () => {
   return (
-    <section className="wrapper py-10 px-6">
+    <section className="wrapper py-10 px-6 font-roboto">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-bold text-green-900">Enjoy Our Extra Services</h2>
+        <h2 className="text-3xl font-bold text-purple-600">Enjoy Our Extra Services</h2>
       </div>
 
       <div className="relative">
@@ -30,7 +30,7 @@ const ExtraServices = () => {
         >
           {extraServices?.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-purple-400 rounded-2xl p-4 text-white h-full">
+              <div className="bg-purple-400 rounded-2xl p-4 text-white h-full hover:scale-[1.02] ">
                 <img
                   src={service.image}
                   alt={service.title}
