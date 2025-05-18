@@ -10,9 +10,11 @@ const Footer = () => {
       <div className=" px-4 flex items-start justify-between py-8 flex-col sm:flex-row gap-8">
         {/* Left Section */}
         <div className="">
-          <h2 className="text-2xl font-bold mb-3">
-            Zyhp<span className="text-primary">Consulting</span>
-          </h2>
+        
+             <div>
+            <img src="/images/logo2.PNG" alt="logo" className="w-20 h-20 rounded-full" />
+          </div>
+      
           <p className="mb-4 text-lg leading-[30px] text-gray-300 font-normal font-poppins w-full max-w-[450px]">
           Zyhp Consulting is your trusted partner for innovative business solutions and strategic growth. We are dedicated to empowering your success with expert consulting services tailored to your unique needs. Let’s build a brighter future together!
           </p>
