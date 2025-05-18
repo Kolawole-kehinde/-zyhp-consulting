@@ -3,6 +3,7 @@ import HeroSection from '../Components/Hero'
 import ServicesSection from '../Components/Services'
 import AboutSection from '../Components/AboutSection'
 import ProgressSection from '../Components/ProgressSection'
+import ExtraServices from '../Components/ExtraServices'
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
         <ServicesSection/>
         <AboutSection/>
          <ProgressSection/>
+         <ExtraServices/>
     </div>
   )
 }

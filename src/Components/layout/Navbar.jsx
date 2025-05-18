@@ -7,16 +7,14 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-4 left-0 w-full z-50 px-4 flex justify-center">
-      <nav className="wrapper bg-gradient-to-br from-purple-200 via-white to-white border-2 border-black rounded-xl lg:rounded-full shadow-md px-6 py-3 max-h-20">
-        <div className="flex items-center justify-between h-16">
+      <nav className="wrapper bg-gradient-to-br from-purple-200 via-white to-white border-2 border-black rounded-xl lg:rounded-full shadow-md px-6 py-3">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
           <div>
-            <img
-              src="/images/logo.png"
-              alt="logo"
-              className="lg:w-32 lg:h-32 w-20 h-20 max-h-full object-contain"
-            />
+            <img src="/images/logo.png" alt="logo" className="w-16 h-16" />
           </div>
 
+          {/* Desktop Nav Items & Button */}
           <div className="flex items-center gap-10">
             <ul className="hidden md:flex items-center gap-10 text-base font-medium text-gray-800">
               {navItems.map((item) => (
@@ -36,6 +34,7 @@ const Navbar = () => {
             </button>
           </div>
 
+          {/* Mobile Toggle Button */}
           <button
             className="md:hidden text-gray-800"
             onClick={() => setIsOpen((prev) => !prev)}

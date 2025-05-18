@@ -1,9 +1,4 @@
-import {
-  FaShareAlt,
-  FaPlayCircle,
-  FaBullhorn,
-  FaDesktop,
-} from "react-icons/fa";
+
 
 import {
   FaChartLine,
