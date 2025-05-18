@@ -8,7 +8,7 @@ import { extraServices } from '../constant/ExtraService';
 
 const ExtraServices = () => {
   return (
-    <section className="bg-green-100 py-10 px-6">
+    <section className="wrapper py-10 px-6">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold text-green-900">Enjoy Our Extra Services</h2>
       </div>
@@ -30,15 +30,14 @@ const ExtraServices = () => {
         >
           {extraServices?.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-green-900 rounded-2xl p-4 text-white h-full">
+              <div className="bg-purple-400 rounded-2xl p-4 text-white h-full">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
-                <h3 className="font-bold text-lg">{service.title}</h3>
-                <p className="text-green-400 font-extrabold text-2xl">{service.price}</p>
-                <p className="text-sm mt-2">{service.description}</p>
+                <h3 className="font-bold text-lg mb-4">{service.title}</h3>
+                <p className="text-sm mt-2 leading-8">{service.description}</p>
               </div>
             </SwiperSlide>
           ))}
