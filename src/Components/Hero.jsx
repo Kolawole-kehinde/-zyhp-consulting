@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router";
 
 export default function HeroSection() {
   return (
@@ -37,12 +38,12 @@ export default function HeroSection() {
               {/* CTA Buttons */}
           <div className="space-y-4 flex-col items-center">
             <div className="gap-4 hidden md:flex">
-              <button className="bg-purple-500 text-black font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition">
+              <Link to="/services" className="bg-purple-500 text-black font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition">
                 All Services →
-              </button>
-              <button className="border border-gray-700 md:px-8 lg:px-20py-4 rounded-lg text-black hover:bg-gray-200 transition">
+              </Link>
+              <a href="https://www.facebook.com/share/1BwwsrKrx2/" target="_blank" className="border border-gray-700 md:px-8 lg:px-20 py-4 rounded-lg text-black hover:bg-gray-200 transition">
                 Contact us
-              </button>
+              </a>
             </div>
 
             

@@ -1,38 +1,38 @@
 export const extraServices = [
-     {
+  {
     title: "SEO Expertise",
-    price: "$300",
     description:
       "Be discovered by the right audience at the right time with our expert SEO strategies. We conduct in-depth keyword research, optimize on-page elements, improve site speed and structure, and build authoritative backlinks to increase your search engine rankings. Whether you're aiming for local visibility or global reach, our SEO service positions your brand where it matters most — on the first page of Google.",
     image: "/images/seo.png",
   },
   {
-    title: "Branding & Logo Design",
-    price: "$300",
+    title: "Branding",
     description:
-      "Establish a powerful and memorable brand identity with our comprehensive branding and logo design service. We dive deep into your brand’s values, audience, and mission to craft a visual identity that is consistent, recognizable, and professional. From typography and color palettes to custom logo concepts, we ensure every element communicates your brand’s unique story and sets the tone across all platforms.",
+      "Shape a compelling and unified brand presence with our complete branding service. We uncover your business’s core values and mission to develop a style guide, define your brand’s tone of voice, select cohesive color palettes, and establish consistent messaging across all platforms. This process helps ensure your brand is distinctive, trustworthy, and resonates deeply with your audience — creating lasting impact in every interaction.",
+    image: "/images/brand.jpg",
+  },
+  {
+    title: "Logo Design",
+    description:
+      "Stand out with a custom-designed logo that captures the essence of your business. Our design team explores your brand identity and audience to create unique logo concepts, ensuring a perfect blend of creativity and strategy. From clean typography to bold symbols, we deliver versatile logos that are instantly recognizable and scalable for every platform, leaving a lasting impression wherever your brand appears.",
     image: "/images/brandlogo.jpeg",
   },
   {
     title: "Social Media Management",
-    price: "$350",
     description:
-      "Let us take the stress out of managing your social media presence. Our team creates engaging content, plans strategic campaigns, and interacts with your audience daily to build meaningful relationships. With a clear focus on brand voice, visual consistency, and audience insights, we grow your social channels while you focus on running your business.",
+      "Boost your online presence with professional social media management. We create and curate tailored content, schedule strategic campaigns, and engage your audience to build loyalty and brand awareness. Through data-driven insights and a strong visual identity, we maintain consistency across platforms while adapting to trends and algorithms — helping your brand stay relevant, grow organically, and reach new potential customers daily.",
     image: "/images/social.jpeg",
   },
   {
     title: "Email Marketing",
-    price: "$250",
     description:
-      "Maximize customer engagement and retention with high-converting email campaigns. From welcome sequences and newsletters to promotional blasts and automated drip campaigns, we write, design, and optimize every email to speak directly to your audience. Our data-driven approach ensures your emails get opened, clicked, and acted on — boosting revenue and customer loyalty.",
+      "Turn subscribers into loyal customers with personalized email marketing strategies. We design high-converting campaigns including welcome flows, newsletters, product promotions, and automation sequences. Each email is tailored to your audience, optimized for performance, and aligned with your brand tone. Our data-focused approach ensures better open rates, higher engagement, and consistent growth in customer retention and lifetime value.",
     image: "/images/email.jpeg",
   },
   {
     title: "Affiliate Marketing",
-    price: "$400",
     description:
-      "Expand your reach and increase sales through affiliate marketing. We help you build and manage a network of trusted partners who promote your products or services for a commission. From recruiting quality affiliates and providing marketing assets to tracking performance and optimizing campaigns, we handle everything needed to scale your growth through a results-driven affiliate model.",
+      "Grow your brand through a high-impact affiliate marketing system. We help you recruit reliable partners, provide them with branded assets, and manage campaigns from start to scale. Our team monitors affiliate performance, optimizes communication, and ensures results through targeted strategies — allowing you to increase your reach, generate passive revenue, and expand your market with a pay-for-results model.",
     image: "/images/aff.png",
   },
- 
 ];

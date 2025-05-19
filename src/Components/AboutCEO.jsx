@@ -32,9 +32,9 @@ const AboutCEO = () => {
             <p className="text-gray-800 mb-2">
               Ready to start your brand journey?
             </p>
-            <button className="bg-purple-600 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-purple-700 transition">
+            <a href="https://www.facebook.com/share/1BwwsrKrx2/" target="_blank" className="bg-purple-600 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-purple-700 transition">
               Get in Touch
-            </button>
+            </a>
           </div>
         </div>
 
