@@ -12,25 +12,25 @@ const services = [
     icon: <FaShareAlt className="text-purple-500 w-8 h-8" />,
     title: "Social Media Strategy",
     description:
-      "Our services is the best you will ever find if you truly want sales, growth, and success",
+      "Our social media strategy services are designed to elevate your brand's online presence and engagement.",
   },
   {
     icon: <FaPlayCircle className="text-purple-500 w-8 h-8" />,
     title: "Content Creation",
     description:
-      "Our services is the best you will ever find if you truly want sales, growth, and success",
+      "Our content creation services are designed to elevate your brand's online presence and engagement.",
   },
   {
     icon: <FaBullhorn className="text-purple-500 w-8 h-8" />,
     title: "Paid Advertising",
     description:
-      "Our services is the best you will ever find if you truly want sales, growth, and success",
+      "Our paid advertising services are tailored to drive targeted traffic and maximize your ROI.",
   },
   {
     icon: <FaDesktop className="text-purple-500 w-8 h-8" />,
     title: "Website Design",
     description:
-      "Our services is the best you will ever find if you truly want sales, growth, and success",
+      "Our website design services are focused on creating user-friendly and visually appealing websites.",
   },
 ];
 
@@ -81,7 +81,7 @@ const ServicesSection = () => {
               <p className="text-sm text-black">{service.description}</p>
               <a
                 href="#"
-                className="text-purple-400 font-semibold mt-7"
+                className="text-purple-400 font-semibold mt-10"
               >
                 Learn more
               </a>

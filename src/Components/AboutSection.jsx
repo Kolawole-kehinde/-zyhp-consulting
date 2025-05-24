@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import 'animate.css';  
+import { Link } from 'react-router';
 
 const AboutSection = () => {
   return (
@@ -34,7 +35,10 @@ const AboutSection = () => {
           <p
             className="text-gray-800 text-lg animate__animated animate__fadeInUp animate__delay-2s"
           >
-            Our services is the best you will ever find if you truly want sales, growth, and success
+            At Zyhp Consulting, we are a passionate team of experts dedicated to
+            helping businesses thrive in the digital landscape. With a focus on
+            innovation and results-driven strategies, we empower our clients to
+            achieve their goals and stand out in a competitive market.
           </p>
 
           {/* Trusted By */}
@@ -60,9 +64,11 @@ const AboutSection = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 justify-start animate__animated animate__fadeInUp animate__delay-3s">
-            <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 md:px-20 py-4 rounded-xl transition duration-300">
+          <Link to="/about">
+            <button className="bg-purple-500 border text-sm md:text-base border-purple-500 hover:bg-purple-600 text-white font-semibold px-16 md:px-18 py-4 rounded-xl transition duration-300">
               About us →
             </button>
+          </Link>
             <button className="border text-sm md:text-base border-purple-500 hover:bg-purple-100 text-purple-500 font-semibold px-16 md:px-18 py-4 rounded-xl transition duration-300">
               Chat Now
             </button>

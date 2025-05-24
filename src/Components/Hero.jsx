@@ -72,7 +72,7 @@ export default function HeroSection() {
           </div>
 
           <p className="w-full max-w-[505px] text-gray-700 text-base md:text-xl">
-            Our services are the best you will ever find if you truly want sales, growth, and success.
+            Our services are unmatched when it comes to driving sales, growth, and lasting success
           </p>
 
           {/* Avatars and CTA */}
@@ -94,7 +94,7 @@ export default function HeroSection() {
             <div className="gap-4 hidden md:flex">
               <Link
                 to="/services"
-                className="bg-purple-500 text-black font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition"
+                className="bg-purple-500 text-white font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition"
               >
                 All Services →
               </Link>
@@ -155,14 +155,14 @@ export default function HeroSection() {
           <div className="bg-purple-600 absolute bottom-0 w-full lg:w-[480px] flex gap-4 items-center justify-center py-4 mr-4 rounded-lg lg:ml-5">
             <div className="text-center">
               <h2 className="text-white text-3xl font-bold">
-                <Counter target={2000} /> {/* Animated count */}
+                <Counter target={1500} /> {/* Animated count */}
               </h2>
               <p className="text-white font-medium">Client Engagement</p>
             </div>
             <div className="w-1 h-16 bg-gray-300"></div>
             <div className="text-center">
               <h2 className="text-white text-3xl font-bold">
-                <Counter target={430} /> {/* Animated count */}
+                <Counter target={650} /> {/* Animated count */}
               </h2>
               <p className="text-white font-medium">Completed Projects</p>
             </div>

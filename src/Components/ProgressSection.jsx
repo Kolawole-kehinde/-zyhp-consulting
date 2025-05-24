@@ -6,6 +6,7 @@ import {
   FaBullseye,
   FaAward,
 } from "react-icons/fa";
+import { Link } from "react-router";
 
 const services = [
   {
@@ -76,9 +77,11 @@ const ProgressSection = () => {
         ))}
       </div>
       <div className="flex items-center justify-center">
-         <button className="bg-purple-500 text-black font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition mt-16 w-full md:w-[350px] ">
-                All Services →
-              </button>
+        <Link to="/services">
+          <button className="bg-purple-500 text-white font-semibold md:px-8 lg:px-20 py-4 rounded-lg hover:bg-purple-600 transition mt-16 w-full md:w-[350px] ">
+            All Services →
+          </button>
+        </Link>
       </div>
        
     </div>
