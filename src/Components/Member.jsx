@@ -11,7 +11,7 @@ const Member = () => {
             {/* CEO image */}
             <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
               <img
-                src="/images/ent.jpg"
+                src="/images/ent.png"
                 alt="Our CEO"
                 className="w-full h-full object-cover"
               />

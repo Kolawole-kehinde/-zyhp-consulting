@@ -9,7 +9,7 @@ const AboutUs = () => {
       
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-16">
         <img
-          src="/images/ceo.jpg"
+          src="/images/ceo.png"
           alt="Zyhp Consulting Team"
           className="rounded-xl shadow-md object-cover w-full"
         />

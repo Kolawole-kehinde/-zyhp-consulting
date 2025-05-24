@@ -9,15 +9,15 @@ const AboutSection = () => {
         {/* Image */}
         <div className="flex-shrink-0 w-full lg:w-1/2">
           <img
-            src="/images/team.jpg" // Replace with actual path
+            src="/images/team.png" // Replace with actual path
             alt="Team working together"
-            className="rounded-[60px] w-full h-auto object-cover"
+            className="rounded w-full h-auto object-cover"
           />
         </div>
 
         {/* Text Content */}
         <div className="w-full lg:w-1/2 space-y-6 text-start lg:text-left">
-          <p className="text-purple-500 font-semibold uppercase tracking-wide">
+          <p className="text-purple-500 text-xl font-semibold uppercase tracking-wide">
             Who we are
           </p>
           <h2 className="text-2xl sm:text-5xl font-bold text-black leading-tight">
