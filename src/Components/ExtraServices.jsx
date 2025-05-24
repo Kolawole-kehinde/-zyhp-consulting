@@ -3,17 +3,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'animate.css'; 
 import './custom-swiper.css';
 import { extraServices } from '../constant/ExtraService';
 
 const ExtraServices = () => {
   const paginationRef = useRef(null);
+  const swiperRef = useRef(null);
   const [paginationEl, setPaginationEl] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    // ensure ref is set after first render
     setPaginationEl(paginationRef.current);
   }, []);
+
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.realIndex);
+  };
 
   return (
     <section className="wrapper py-10 px-6 font-roboto">
@@ -22,6 +28,8 @@ const ExtraServices = () => {
       </div>
 
       <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSlideChange={handleSlideChange}
         modules={[Pagination]}
         pagination={{
           el: paginationEl,
@@ -37,7 +45,15 @@ const ExtraServices = () => {
       >
         {extraServices.map((service, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-purple-400 rounded-2xl p-4 text-white h-full hover:scale-[1.02]">
+            <div
+              className={`bg-purple-400 rounded-2xl p-4 text-white h-full hover:scale-[1.02] transition-transform duration-300
+              ${
+                index === activeIndex
+                  ? 'animate__animated animate__fadeInUp'
+                  : 'opacity-70'
+              }`}
+              style={{ animationDuration: '0.8s' }}
+            >
               <img
                 src={service.image}
                 alt={service.title}

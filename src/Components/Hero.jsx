@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router";
 
@@ -16,6 +15,27 @@ const rotatingServices = [
   "Affiliate Marketer",
   "SEO Expert"
 ];
+
+function Counter({ target, duration = 2000 }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = target / (duration / 50); 
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        start = target;
+        clearInterval(interval);
+      }
+      setCount(Math.floor(start));
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, [target, duration]);
+
+  return <>{count}+</>;
+}
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,24 +54,21 @@ export default function HeroSection() {
       <div className="wrapper flex flex-col md:flex-row items-center gap-4 lg:gap-8">
         {/* Text Section */}
         <div className="w-full lg:w-[596px] space-y-5 lg:space-y-[32px]">
-          <h1 className="text-[40px] lg:text-[80px] font-bold text-black leading-[50px] lg:leading-[90px]">
+          <h1
+            className="text-[40px] lg:text-[80px] font-bold text-black leading-[50px] lg:leading-[90px] mb-1
+            animate__animated animate__fadeInTopLeft"
+          >
             Real Experts <br /> Skilled In
           </h1>
 
-          {/* Animated Rotating Text */}
-          <div className="h-[65px] relative overflow-hidden">
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={currentIndex}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.6 }}
-                className="absolute text-purple-600 font-normal text-[30px] lg:text-[55px] capitalize"
-              >
-                {rotatingServices[currentIndex]}
-              </motion.span>
-            </AnimatePresence>
+          {/* Rotating Services Text */}
+          <div className="h-[56px] overflow-visible">
+            <span
+              key={rotatingServices[currentIndex]}
+              className="animate__animated animate__fadeInTopLeft text-purple-600 font-normal text-[30px] lg:text-[55px] capitalize leading-tight block"
+            >
+              {rotatingServices[currentIndex]}
+            </span>
           </div>
 
           <p className="w-full max-w-[505px] text-gray-700 text-base md:text-xl">
@@ -111,7 +128,7 @@ export default function HeroSection() {
             <div className="flex gap-2 w-full md:hidden">
               <Link
                 to="/services"
-                className="bg-purple-500 text-black font-semibold px-6 py-4 rounded-lg hover:bg-purple-600 transition"
+                className="bg-purple-500 text-white font-semibold px-6 py-4 rounded-lg hover:bg-purple-600 transition"
               >
                 All Services →
               </Link>
@@ -132,17 +149,21 @@ export default function HeroSection() {
           <img
             src="/images/Coverimage.png"
             alt="Hero"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover animate__animated animate__zoomIn"
           />
 
           <div className="bg-purple-600 absolute bottom-0 w-full lg:w-[480px] flex gap-4 items-center justify-center py-4 mr-4 rounded-lg lg:ml-5">
             <div className="text-center">
-              <h2 className="text-black text-3xl font-bold">2000+</h2>
+              <h2 className="text-white text-3xl font-bold">
+                <Counter target={2000} /> {/* Animated count */}
+              </h2>
               <p className="text-white font-medium">Client Engagement</p>
             </div>
             <div className="w-1 h-16 bg-gray-300"></div>
             <div className="text-center">
-              <h2 className="text-black text-3xl font-bold">430+</h2>
+              <h2 className="text-white text-3xl font-bold">
+                <Counter target={430} /> {/* Animated count */}
+              </h2>
               <p className="text-white font-medium">Completed Projects</p>
             </div>
           </div>
