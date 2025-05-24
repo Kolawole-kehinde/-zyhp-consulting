@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 const ContactUs = () => {
   return (
     <section className="bg-gradient-to-br from-purple-200 via-white to-white py-10 px-4 lg:px-0 font-roboto">
-      <div className="wrapper text-gray-800 mt-24 space-y-16">
+      <div className="wrapper text-gray-800 mt-32 space-y-16">
 
         {/* Top section: Image + Contact Info */}
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-start">
